@@ -922,6 +922,18 @@ When you see an IP address like `192.168.1.10`:
 
 ### The Email-to-IP Translation
 
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Example_of_an_iterative_DNS_resolver.svg/640px-Example_of_an_iterative_DNS_resolver.svg.png" width="550" alt="DNS Resolver Process">
+
+*DNS Resolver — How your computer finds the IP address for any domain name*
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Domain_name_space.svg/640px-Domain_name_space.svg.png" width="500" alt="Domain Name Hierarchy">
+
+*Domain Name Space — The hierarchical tree structure of domain names (root → TLD → domain → subdomain)*
+
+</div>
+
 Just like DNS translates domain names to IPs, SMTP uses DNS to find mail servers:
 
 ```
@@ -1070,13 +1082,25 @@ Example: 192.168.1.10:80 means
 
 ## Chapter 8.6: The OSI Model — Seven Layers of Communication
 
+<div align="center">
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/OSI_Model_v1.svg/476px-OSI_Model_v1.svg.png" width="400" alt="OSI Model">
 
 *The OSI Model — Seven layers of networking, from physical cables to applications*
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/OSI-model-Communication.svg/640px-OSI-model-Communication.svg.png" width="550" alt="OSI Model Communication">
+
+*OSI Communication Flow — How data travels down the stack on sender, across the network, and up the stack on receiver*
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP_encapsulation.svg/640px-UDP_encapsulation.svg.png" width="500" alt="Encapsulation">
 
 *Data encapsulation — Each layer wraps the data with its own header*
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/IP_stack_connections.svg/640px-IP_stack_connections.svg.png" width="450" alt="IP Stack Connections">
+
+*IP Stack Connections — How the layers connect logically vs physically*
+
+</div>
 
 <details>
 <summary><b> TERMINOLOGY BOX</b></summary>
@@ -1160,11 +1184,25 @@ Layer 7-5: [DATA] ........................... Deliver to application
 
 ## Chapter 8.7: LAN, WAN, and Network Types
 
+<div align="center">
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/LAN_WAN_scheme.svg/640px-LAN_WAN_scheme.svg.png" width="550" alt="LAN WAN Diagram">
 
 *LAN vs WAN — Local networks connect to wide area networks through routers*
 
-*A typical Ethernet LAN — Computers connected through a switch*
+### Network Topologies — How Devices Connect
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/StarNetwork.svg/400px-StarNetwork.svg.png" width="220" alt="Star Network Topology">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/BusNetwork.svg/400px-BusNetwork.svg.png" width="220" alt="Bus Network Topology">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/RingNetwork.svg/400px-RingNetwork.svg.png" width="220" alt="Ring Network Topology">
+
+*Star Topology (most common) — Bus Topology (legacy) — Ring Topology (redundancy)*
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/640px-Client-server-model.svg.png" width="400" alt="Client-Server Model">
+
+*Client-Server Model — Clients request services, servers provide them*
+
+</div>
 
 <details>
 <summary><b> TERMINOLOGY BOX</b></summary>
@@ -1234,9 +1272,16 @@ Layer 7-5: [DATA] ........................... Deliver to application
 
 ## Chapter 8.8: Broadcast, Unicast, and Multicast
 
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Broadcast.svg/640px-Broadcast.svg.png" width="250" alt="Broadcast">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Multicast.svg/640px-Multicast.svg.png" width="250" alt="Multicast">
+
 *Broadcast — One sender, ALL receivers on the network hear the message*
 
 *Multicast — One sender to a GROUP of receivers*
+
+</div>
 
 <details>
 <summary><b> TERMINOLOGY BOX</b></summary>
@@ -2763,6 +2808,14 @@ Used for:
 
 ### ARP Security Issue — ARP Spoofing
 
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ARP_Spoofing.svg/640px-ARP_Spoofing.svg.png" width="500" alt="ARP Spoofing Attack">
+
+*ARP Spoofing — Attacker sends fake ARP replies to intercept traffic*
+
+</div>
+
 ```
  ARP has NO authentication!
 
@@ -2838,7 +2891,17 @@ DEFENSE:
 
 ## Chapter 30: The Complete Journey of a Packet
 
-*Internet connectivity layers — Packets travel from access networks through ISPs to the backbone*
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Packet_Switching.gif" width="500" alt="Packet Switching Animation">
+
+*Packet Switching GIF — Watch how packets travel through multiple routers to reach their destination*
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Netfilter-packet-flow.svg/640px-Netfilter-packet-flow.svg.png" width="600" alt="Packet Flow Diagram">
+
+*Detailed packet flow through network stack — From network interface to application layer*
+
+</div>
 
 ### What Actually Happens When You Visit google.com
 
@@ -4137,7 +4200,13 @@ Value:   128    64    32    16     8     4     2     1
 
 ### Network Cables
 
-*RJ-45 connector with TIA-568B wiring standard*
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ethernet_RJ45_connector_p1160054.jpg/640px-Ethernet_RJ45_connector_p1160054.jpg" width="400" alt="RJ45 Ethernet Connector">
+
+*RJ-45 connector — The standard connector for Ethernet cables (Cat5, Cat5e, Cat6)*
+
+</div>
 
 ### Wireless Equipment
 
@@ -4146,6 +4215,14 @@ Value:   128    64    32    16     8     4     2     1
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Wikimedia_Foundation_Servers-8055_35.jpg/640px-Wikimedia_Foundation_Servers-8055_35.jpg" width="500" alt="Server Rack">
 
 ### Firewalls and Security Devices
+
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Firewall.png/640px-Firewall.png" width="450" alt="Firewall Concept">
+
+*Firewall — Acts as a barrier between trusted internal network and untrusted external network*
+
+</div>
 
 ### Patch Panels and Infrastructure
 
@@ -4270,6 +4347,12 @@ You now understand:
 
 ---
 
+###  Remember the Wa'el Way:
+
+*"I don't learn by memorizing facts — I learn by building worlds.*  
+*Purpose before mechanism.*  
+*Constraints before definitions.*  
+*Systems before details."*
 
 ---
 
