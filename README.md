@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by wshannak.*
+*This project has been created as part of the 42 curriculum by wael.*
 
 ---
 
@@ -32,6 +32,19 @@ After solving each level:
 Your repository must contain:
 ```
 your_repository/
+├── assets/
+│   └── badges/
+│       ├── NETPRACTICE.png
+│       ├── level_1.png
+│       ├── level_2.png
+│       ├── level_3.png
+│       ├── level_4.png
+│       ├── level_5.png
+│       ├── level_6.png
+│       ├── level_7.png
+│       ├── level_8.png
+│       ├── level_9.png
+│       └── level_10.png
 ├── level1.json
 ├── level2.json
 ├── level3.json
@@ -212,7 +225,13 @@ You will not just pass NetPractice — you will *understand* how humanity wired 
 <summary><b>PART IX: NetPractice Level 1-10 Walkthrough</b></summary>
 
 - [The Five Laws of Networking](#the-five-laws-of-networking)
-- [Level 1-10 Complete Solutions](#level-1-10-complete-solutions)
+- [Level 1: Identity](#level-1-basic-connectivity--identity)
+- [Level 2-3: Boundaries & Belonging](#level-2-3-subnet-masks--switches--boundaries--belonging)
+- [Level 4-5: The Gate & Direction](#level-4-5-routers--routing-tables--the-gate--direction)
+- [Level 6-7: Default Fate & Segmentation](#level-6-7-internet-connection--default-fate--segmentation)
+- [Level 8-9: Precision & Convergence](#level-8-9-complex-subnetting--precision--convergence)
+- [Level 10: Mastery](#level-10-everything-combined--mastery)
+- [🎖️ Achievement Badges Gallery](#️-achievement-badges-gallery)
 - [Common Mistakes to Avoid](#common-mistakes-to-avoid)
 
 </details>
@@ -3827,9 +3846,11 @@ This is why large networks use MANY subnets — to keep broadcast domains small!
 
 # PART IX: NetPractice Level 1-10
 
-*Example network topology — NetPractice tests your ability to configure these*
-
 <div align="center">
+
+<img src="assets/badges/NETPRACTICE.png" width="350" alt="NetPractice Badge">
+
+*Your journey from networking novice to network master*
 
 > *"Understanding the five laws is understanding everything."*
 
@@ -3871,9 +3892,17 @@ This is why large networks use MANY subnets — to keep broadcast domains small!
 
 ## Level 1-10 Complete Solutions
 
-*Simple home network — Level 1 starts with basic connectivity like this*
+---
 
-### Level 1: Basic Connectivity
+<div align="center">
+
+<img src="assets/badges/level_1.png" width="280" alt="Level 1 - Identity">
+
+</div>
+
+### Level 1: Basic Connectivity — IDENTITY
+
+**Theme:** *Every device needs an identity (IP address) to exist on the network.*
 
 **Concept:** Devices on the same switch need same network portion, different host portions.
 
@@ -3894,18 +3923,57 @@ Broadcast (don't use): 192.168.1.255
 Valid choices for other device: .11, .12, .20, .100, etc.
 ```
 
-### Level 2-3: Subnet Masks & Switches
+---
+
+<div align="center">
+
+<img src="assets/badges/level_2.png" width="280" alt="Level 2 - Boundaries">
+<img src="assets/badges/level_3.png" width="280" alt="Level 3 - Belonging">
+
+</div>
+
+### Level 2-3: Subnet Masks & Switches — BOUNDARIES & BELONGING
+
+**Theme Level 2:** *Subnet masks define the boundaries of your network neighborhood.*
+
+**Theme Level 3:** *Devices must belong to the same network to communicate directly.*
 
 **Key Rule:** All devices on same switch MUST have identical subnet masks.
 
-### Level 4-5: Routers & Routing Tables
+---
+
+<div align="center">
+
+<img src="assets/badges/level_4.png" width="280" alt="Level 4 - The Gate">
+<img src="assets/badges/level_5.png" width="280" alt="Level 5 - Direction">
+
+</div>
+
+### Level 4-5: Routers & Routing Tables — THE GATE & DIRECTION
+
+**Theme Level 4:** *The gateway is your exit door to other networks — your portal to the outside world.*
+
+**Theme Level 5:** *Routing tables give packets direction — they know which way to go.*
 
 **Key Rules:**
 - Router interfaces must be on DIFFERENT networks
 - Gateway must be the router interface on YOUR network
 - Add default route to reach other networks
 
-### Level 6-7: Internet Connection
+---
+
+<div align="center">
+
+<img src="assets/badges/level_6.png" width="280" alt="Level 6 - Default Fate">
+<img src="assets/badges/level_7.png" width="280" alt="Level 7 - Segmentation">
+
+</div>
+
+### Level 6-7: Internet Connection — DEFAULT FATE & SEGMENTATION
+
+**Theme Level 6:** *The default route determines your fate — where packets go when they don't know where else to go.*
+
+**Theme Level 7:** *Network segmentation divides your network into manageable pieces.*
 
 **Key Rule:** Internet needs a route BACK to your network!
 
@@ -3915,7 +3983,20 @@ Destination: Your private network (e.g., 192.168.1.0/24)
 Gateway: Router's public interface IP
 ```
 
-### Level 8-9: Complex Subnetting
+---
+
+<div align="center">
+
+<img src="assets/badges/level_8.png" width="280" alt="Level 8 - Precision">
+<img src="assets/badges/level_9.png" width="280" alt="Level 9 - Convergence">
+
+</div>
+
+### Level 8-9: Complex Subnetting — PRECISION & CONVERGENCE
+
+**Theme Level 8:** *Subnetting requires surgical precision — every bit counts.*
+
+**Theme Level 9:** *Multiple networks must converge through proper routing.*
 
 **Key Rule:** Plan subnets to avoid overlap!
 
@@ -3928,7 +4009,17 @@ Subnet 3: 192.168.0.192/27 (192-223)
 Subnet 4: 192.168.0.224/30 (224-227)
 ```
 
-### Level 10: Everything Combined
+---
+
+<div align="center">
+
+<img src="assets/badges/level_10.png" width="350" alt="Level 10 - Mastery">
+
+</div>
+
+### Level 10: Everything Combined — MASTERY
+
+**Theme:** *True mastery combines all concepts — you are now a network architect.*
 
 **Strategy:**
 1. Draw the topology on paper first
@@ -3938,6 +4029,29 @@ Subnet 4: 192.168.0.224/30 (224-227)
 5. Configure hosts with matching network portions
 6. Set gateways to local router interfaces
 7. Configure ALL routing tables (bidirectional!)
+
+---
+
+## 🎖️ Achievement Badges Gallery
+
+<div align="center">
+
+*Your journey through NetPractice - from Identity to Mastery*
+
+| Badge | Level | Theme | Concept |
+|:-----:|:-----:|:------|:--------|
+| <img src="assets/badges/level_1.png" width="80"> | **1** | IDENTITY | Every device needs an IP address to exist |
+| <img src="assets/badges/level_2.png" width="80"> | **2** | BOUNDARIES | Subnet masks define network limits |
+| <img src="assets/badges/level_3.png" width="80"> | **3** | BELONGING | Same network = same network portion |
+| <img src="assets/badges/level_4.png" width="80"> | **4** | THE GATE | Gateway is your exit to other networks |
+| <img src="assets/badges/level_5.png" width="80"> | **5** | DIRECTION | Routing tables guide packet paths |
+| <img src="assets/badges/level_6.png" width="80"> | **6** | DEFAULT FATE | Default routes catch unknown destinations |
+| <img src="assets/badges/level_7.png" width="80"> | **7** | SEGMENTATION | Divide networks into subnets |
+| <img src="assets/badges/level_8.png" width="80"> | **8** | PRECISION | Complex subnetting requires exact math |
+| <img src="assets/badges/level_9.png" width="80"> | **9** | CONVERGENCE | Multiple networks meet through routers |
+| <img src="assets/badges/level_10.png" width="80"> | **10** | MASTERY | All concepts combined — you're ready! |
+
+</div>
 
 ---
 
