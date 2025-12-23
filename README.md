@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by wael.*
+*This project has been created as part of the 42 curriculum*
 
 ---
 
@@ -32,19 +32,6 @@ After solving each level:
 Your repository must contain:
 ```
 your_repository/
-├── assets/
-│   └── badges/
-│       ├── NETPRACTICE.png
-│       ├── level_1.png
-│       ├── level_2.png
-│       ├── level_3.png
-│       ├── level_4.png
-│       ├── level_5.png
-│       ├── level_6.png
-│       ├── level_7.png
-│       ├── level_8.png
-│       ├── level_9.png
-│       └── level_10.png
 ├── level1.json
 ├── level2.json
 ├── level3.json
@@ -106,7 +93,7 @@ You will not just pass NetPractice — you will *understand* how humanity wired 
 
 ---
 
-### The Learning Philosophy (The Wa'el Way)
+### The Learning Philosophy
 
 > *"An idiot admires complexity. A genius admires simplicity."*
 > 
@@ -4460,14 +4447,6 @@ You now understand:
 **You understand how humanity wired the planet.**
 
 ---
-
-###  Remember the Wa'el Way:
-
-*"I don't learn by memorizing facts — I learn by building worlds.*  
-*Purpose before mechanism.*  
-*Constraints before definitions.*  
-*Systems before details."*
-
 ---
 
 **Made with passion by and for 42 Students**
